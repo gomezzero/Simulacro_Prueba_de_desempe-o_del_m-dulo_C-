@@ -68,9 +68,9 @@ namespace Simulacro_Prueba_de_desempe_o_del_m_dulo_C_.Models
           {
                return Adreess;
           }
-          public string cc()
+          public string IdentificacionDriver()
           {
-               return base.cc();
+               return base.Cc();
           }
      }
 }

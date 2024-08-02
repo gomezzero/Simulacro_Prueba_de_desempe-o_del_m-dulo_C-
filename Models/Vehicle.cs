@@ -35,7 +35,7 @@ namespace Simulacro_Prueba_de_desempe_o_del_m_dulo_C_.Models
 
         public static Driver CarOwner(string IdentificationNumber)
         {
-            return TransRiwi.ListDrivers.FirstOrDefault(x => x.cc() == IdentificationNumber);
+            return TransRiwi.ListDrivers.FirstOrDefault(x => x.IdentificacionDriver() == IdentificationNumber);
         }
     }
 }

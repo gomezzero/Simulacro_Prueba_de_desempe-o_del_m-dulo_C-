@@ -55,7 +55,7 @@ namespace Simulacro_Prueba_de_desempe_o_del_m_dulo_C_.Models
             Console.WriteLine($"Edad: {CalculateAge()} años");
         }
 
-        protected string cc()
+        protected string Cc()
         {
             return IdentificationNumber;
         }

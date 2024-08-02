@@ -110,5 +110,11 @@ namespace Simulacro_Prueba_de_desempe_o_del_m_dulo_C_.Models
 
             return new Vehicle(id, placa, tipo, engineNumber, peopleCapacity, driver);
         }
+
+        public static Driver UpdateDriver()
+        {
+            return CreateDriver();
+        }
+    
     }
 }
