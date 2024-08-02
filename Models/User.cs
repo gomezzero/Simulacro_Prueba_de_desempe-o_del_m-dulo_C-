@@ -32,13 +32,32 @@ namespace Simulacro_Prueba_de_desempe_o_del_m_dulo_C_.Models
         }
 
         protected void ShowDetails()
-        { }
+        { 
+            Console.WriteLine($"ID: {Id}");
+            Console.WriteLine($"Nombre: {Name} {LastName}");
+            Console.WriteLine($"Tipo de documento: {TypeDocument}");
+            Console.WriteLine($"Número de identificación: {IdentificationNumber}");
+            Console.WriteLine($"Fecha de nacimiento: {Birthdate.ToString("dd/MM/yyyy")}");
+            Console.WriteLine($"Correo electrónico: {Email}");
+            Console.WriteLine($"Teléfono: {PhoneNumber}");
+            Console.WriteLine($"Dirección: {Adreess}");
+        }
 
         protected int CalculateAge()
-        { return 0;}
+        { 
+            DateOnly currentDate = DateOnly.FromDateTime(DateTime.Now);
+            int age = currentDate.Year - Birthdate.Year;
+            return age;
+        }
 
-        protected void SohwAge()
-        { }
+        protected void ShowAge()
+        {
+            Console.WriteLine($"Edad: {CalculateAge()} años");
+        }
 
+        protected string cc()
+        {
+            return IdentificationNumber;
+        }
     }
 }
